@@ -25,7 +25,6 @@ public class MainActivity extends Activity {
 	    textH.setText(hello);
 	    setContentView(textH);
 	    
-	    
 	  }
 	
     }
