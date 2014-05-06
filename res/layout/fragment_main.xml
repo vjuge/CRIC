@@ -45,8 +45,7 @@
         android:layout_below="@+id/abcTaille"
         android:ems="10"
         android:inputType="number"
-
-    </EditText>
+        />
 
     <RadioGroup
         android:id="@+id/radioGroup1"
