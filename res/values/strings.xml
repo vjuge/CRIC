@@ -6,7 +6,7 @@
     <string name="action_settings" tools:ignore="MissingTranslation">Settings</string>
     <string name="abcClicInvite" tools:ignore="MissingTranslation">clic here !</string>
     <string name="poids">poids</string>
-    <string name="taille">taille (cm)</string>
+    <string name="taille">taille</string>
     <string name="metre">mètre</string>
     <string name="cm">cm</string>
     <string name="megaFonction">cool</string>

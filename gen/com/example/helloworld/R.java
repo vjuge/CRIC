@@ -1098,9 +1098,9 @@ containing a value of this type.
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
         public static final int butCalcIMC=0x7f050045;
-        public static final int butRAZ=0x7f050046;
+        public static final int butRAZ=0x7f050044;
         public static final int checkbox=0x7f05002d;
-        public static final int checkmegaFonction=0x7f050044;
+        public static final int checkmegaFonction=0x7f050046;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
         public static final int default_activity_button=0x7f050028;

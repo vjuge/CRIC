@@ -253,9 +253,9 @@ int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
 int id butCalcIMC 0x7f050045
-int id butRAZ 0x7f050046
+int id butRAZ 0x7f050044
 int id checkbox 0x7f05002d
-int id checkmegaFonction 0x7f050044
+int id checkmegaFonction 0x7f050046
 int id collapseActionView 0x7f05000d
 int id container 0x7f05003c
 int id default_activity_button 0x7f050028

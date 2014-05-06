@@ -16,11 +16,11 @@ import android.widget.Toast;
  */
 public class MainActivity extends Activity {
 
-	Button bcalcIMC, grosButton, bRAZ = null;
-	TextView resultIMC = null;
-	EditText edTaille, edPoids = null;
-	CheckBox megaFct = null;
-	String megaText = null;
+	private static Button bcalcIMC, grosButton, bRAZ = null;
+	private static TextView resultIMC = null;
+	private static EditText edTaille, edPoids = null;
+	//private static CheckBox megaFct = null;
+	private static String megaText = null;
 
 	/*
 	 * (non-Javadoc)
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
 		resultIMC = (TextView) findViewById(R.id.imcResult);
 		edPoids = (EditText) findViewById(R.id.editPoids);
 		edTaille = (EditText) findViewById(R.id.editTaille);
-		megaFct = (CheckBox) findViewById(R.id.checkmegaFonction);
+		//megaFct = (CheckBox) findViewById(R.id.checkmegaFonction);
 		megaText = (String) getString(R.string.megaFonction);
 		// grosButton = (Button) findViewById(R.id.grosBoutton);
 		//
@@ -61,10 +61,10 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				if (megaFct.isChecked()) {
-					resultIMC.setText(megaText);
-					return;
-				}
+//				if (megaFct.isChecked()) {
+//					resultIMC.setText(megaText);
+//					return;
+//				}
 				resultIMC.setText(calcIMC(edTaille.getText().toString(),
 						edPoids.getText().toString()));
 			}
