@@ -6,18 +6,5 @@
     tools:context="com.example.helloworld.MainActivity"
     tools:ignore="MergeRootFrame" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/action_settings" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="151dp"
-        android:layout_height="99dp"
-        android:text="Button" />
-
 </FrameLayout>
 
