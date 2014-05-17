@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +38,7 @@ public class MainActivity extends Activity {
 		edTaille = (EditText) findViewById(R.id.editTaille);
 		//megaFct = (CheckBox) findViewById(R.id.checkmegaFonction);
 		megaText = (String) getString(R.string.megaFonction);
+		
 		// grosButton = (Button) findViewById(R.id.grosBoutton);
 		//
 		// b1.setOnTouchListener(touchListenerButton1);
@@ -65,9 +66,20 @@ public class MainActivity extends Activity {
 //					resultIMC.setText(megaText);
 //					return;
 //				}
+				resultIMC.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.animtexttween));
 				resultIMC.setText(calcIMC(edTaille.getText().toString(),
 						edPoids.getText().toString()));
+				
 			}
+		});
+		
+		bRAZ.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				resultIMC.setText(R.string.ImcResult);
+			}
+			
 		});
 	}
 
@@ -78,7 +90,7 @@ public class MainActivity extends Activity {
 	 *            @String. if String is empty, initialize value to 0
 	 * @param poids
 	 *            @String. if String is empty, initialize value to 0
-	 * @return float, if poids equals 0, returns the String "IMC"
+	 * @return String rounded, if poids equals 0, returns the String "IMC"
 	 */
 	private String calcIMC(String taille, String poids) {
 		float t, p;
@@ -97,7 +109,7 @@ public class MainActivity extends Activity {
 			Toast.makeText(this, "taille trop petite", Toast.LENGTH_SHORT).show();
 			return "IMC";
 		} else {
-			return String.valueOf(p / (float) Math.pow(t, 2));
+			return String.valueOf(Math.round(p / (float) Math.pow(t, 2)));
 		}
 	}
 }
