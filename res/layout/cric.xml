@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cricTitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editIPInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:digits="0123456789."
+            android:ems="3"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textSlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sSlash" />
+
+        <EditText
+            android:id="@+id/editIpMask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="2"
+            android:minEms="3"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/Go" />
+
+    <TextView
+        android:id="@+id/textIPResult"
+        android:layout_width="match_parent"
+        android:layout_height="367dp"
+        android:textIsSelectable="true"/>
+
+</LinearLayout>
