@@ -4,5 +4,8 @@
         <item name="android:textSize">100sp</item>
         <item name="android:textColor">#FF0000</item>
     </style>
+    <style name="defaultText">
+        <item name="android:textSize">18sp</item>
+    </style>
     
 </resources>
